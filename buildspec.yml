@@ -17,5 +17,5 @@ phases:
     commands:
       - |
         if expr "${CODEBUILD_INITIATOR}" : "codepipeline*" >/dev/null; then
-          ./mvnw -s awssettings.xml -Drepo.id=github -Drepo.username=${GITHUB_USERNAME} -Drepo.password=${GITHUB_TOKEN} deploy
+          ./mvnw -s awssettings.xml -Drepo.id=github -Drepo.username=$GITHUB_USERNAME -Drepo.password=$GITHUB_TOKEN deploy
         fi
