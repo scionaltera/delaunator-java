@@ -1,0 +1,21 @@
+version: 0.2
+env:
+  parameter-store:
+    GITHUB_USERNAME: "agony-engine-packages-github-username"
+    GITHUB_TOKEN: "agony-engine-packages-github-token"
+
+  phases:
+    install:
+      runtime-versions:
+        java: corretto8
+      commands:
+        - chmod +x ./mvnw
+    build:
+      commands:
+        - ./mvnw clean package
+    post_build:
+      command:
+        - |
+          if expr "${CODEBUILD_INITIATOR}" : "codepipeline*" >/dev/null; then
+            ./mvnw -s awssettings.xml -Drepo.id=github -Drepo.username=${GITHUB_USERNAME} -Drepo.password=${GITHUB_TOKEN} deploy
+          fi
