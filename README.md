@@ -1,4 +1,5 @@
 [![](https://jitpack.io/v/waveware4ai/delaunator-java.svg)](https://jitpack.io/#waveware4ai/delaunator-java)
+![](https://codebuild.us-west-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoieG1tN3c4ZFZ5eC9CS0EvQ2tFbGxyYUZEVVYwdDV5UWI1dlRxQVpVN21hd3lmSXg1SjRHbk1DSWcvM1VFbzFGSlBqQjI5cmc1M3NOVy9jbFErbUpra2pFPSIsIml2UGFyYW1ldGVyU3BlYyI6IkxZK1c0NzJWYTUwTGczejkiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)  
 
 
 # delaunator-java
