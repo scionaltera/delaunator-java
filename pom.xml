@@ -22,4 +22,12 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>Github scionaltera Maven Packages</name>
+			<url>https://maven.pkg.github.com/scionaltera/delaunator-java</url>
+		</repository>
+	</distributionManagement>
 </project>
